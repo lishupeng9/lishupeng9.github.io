@@ -239,7 +239,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-02-24 11:39:35 / Modified: 12:23:47" itemprop="dateCreated datePublished" datetime="2023-02-24T11:39:35+08:00">2023-02-24</time>
+              <time title="Created: 2023-02-24 11:39:35 / Modified: 12:46:34" itemprop="dateCreated datePublished" datetime="2023-02-24T11:39:35+08:00">2023-02-24</time>
             </span>
 
           
@@ -256,13 +256,15 @@
           <h1 id="使用Flask框架中遇到的CSS、JS无法正确引用到index-html的解决办法"><a href="#使用Flask框架中遇到的CSS、JS无法正确引用到index-html的解决办法" class="headerlink" title="使用Flask框架中遇到的CSS、JS无法正确引用到index.html的解决办法"></a>使用Flask框架中遇到的CSS、JS无法正确引用到index.html的解决办法</h1><ul>
 <li>引用JS、CSS文件的路径写法与一般情况下不同，两者具有相同点，但也有轻微差别</li>
 </ul>
-<h3 id="首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下："><a href="#首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下：" class="headerlink" title="首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下："></a>首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下：</h3><p>&lt; !–more–&gt;</p>
-<ul>
-<li><link rel="stylesheet" type="text/css"  href="{ {url_for('static',filename='css/style.css')} }" ></li>
-<li><script type="text/javascript" src="{ {url_for('static',filename='js/my.js')} }" ></script>
-<h6 id="如果实在无法解决，只能将CSS、JS文件写入HTML文件中，这样就不存在引用问题。"><a href="#如果实在无法解决，只能将CSS、JS文件写入HTML文件中，这样就不存在引用问题。" class="headerlink" title="如果实在无法解决，只能将CSS、JS文件写入HTML文件中，这样就不存在引用问题。"></a>如果实在无法解决，只能将CSS、JS文件写入HTML文件中，这样就不存在引用问题。</h6></li>
-</ul>
-<h3 id="引用连续两个大括号会出现问题，只需在中间加一个空格便能轻松解决"><a href="#引用连续两个大括号会出现问题，只需在中间加一个空格便能轻松解决" class="headerlink" title="引用连续两个大括号会出现问题，只需在中间加一个空格便能轻松解决"></a>引用连续两个大括号会出现问题，只需在中间加一个空格便能轻松解决</h3>
+<h3 id="首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下："><a href="#首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下：" class="headerlink" title="首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下："></a>首先CSS、JS的引用都是在默认路径下找文件，所以需要在工程目录下建造一个static文件，创建CSS、JS文件夹，将文件分别放进去，接着在HTML文件中修改引用的路径，具体如下：</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/24/%E4%BD%BF%E7%94%A8Flask%E9%81%87%E5%88%B0%E7%9A%84CSS%E3%80%81JS%E5%BC%95%E7%94%A8%E9%97%AE%E9%A2%98/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="数据表StuID   Score1        702        853        854        805        74 使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用order by order by是对结果按照一个列或多个列进行排序，默认为升序 例：select column1，column2，….from tableorder by c">
+  <meta name="description" content="数据表StuID   Score1        702        853        854        805        74 使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql学习_排序函数">
 <meta property="og:url" content="http://example.com/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="数据表StuID   Score1        702        853        854        805        74 使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用order by order by是对结果按照一个列或多个列进行排序，默认为升序 例：select column1，column2，….from tableorder by c">
+<meta property="og:description" content="数据表StuID   Score1        702        853        854        805        74 使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-05-04T03:03:06.000Z">
-<meta property="article:modified_time" content="2023-05-04T06:01:42.164Z">
+<meta property="article:modified_time" content="2023-05-04T07:54:05.815Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-05-04 11:03:06 / Modified: 14:01:42" itemprop="dateCreated datePublished" datetime="2023-05-04T11:03:06+08:00">2023-05-04</time>
+              <time title="Created: 2023-05-04 11:03:06 / Modified: 15:54:05" itemprop="dateCreated datePublished" datetime="2023-05-04T11:03:06+08:00">2023-05-04</time>
             </span>
 
           
@@ -190,9 +190,11 @@
       
         <ul>
 <li>数据表<br>StuID   Score<br>1        70<br>2        85<br>3        85<br>4        80<br>5        74</li>
-<li>使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用<h2 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h2></li>
+<li>使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用<span id="more"></span>
+<h2 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h2></li>
 <li>order by是对结果按照一个列或多个列进行排序，默认为升序</li>
-<li>例：select column1，column2，….<br>from table<br>order by column1，column2，…. asc|desc；<h2 id="row-number"><a href="#row-number" class="headerlink" title="row_number()"></a>row_number()</h2></li>
+<li>例：select column1，column2，….<br>from table<br>order by column1，column2，…. asc|desc；<!--more-->
+<h2 id="row-number"><a href="#row-number" class="headerlink" title="row_number()"></a>row_number()</h2></li>
 <li>row_number()函数是将select查询到的数据进行排序，每一条数据会加一个序号，当排序数据相同时它会顺序排下来，不会出现相同序号，所以一般不作为成绩类的查询，一般用于分页查询</li>
 <li>例:select<br>row_number() over (order by score desc) as [RANK],*<br>from score<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70</li>
 </ul>

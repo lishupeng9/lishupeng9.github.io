@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-05-04 11:03:06 / Modified: 14:01:42" itemprop="dateCreated datePublished" datetime="2023-05-04T11:03:06+08:00">2023-05-04</time>
+              <time title="Created: 2023-05-04 11:03:06 / Modified: 15:54:05" itemprop="dateCreated datePublished" datetime="2023-05-04T11:03:06+08:00">2023-05-04</time>
             </span>
 
           
@@ -186,19 +186,15 @@
       
           <ul>
 <li>数据表<br>StuID   Score<br>1        70<br>2        85<br>3        85<br>4        80<br>5        74</li>
-<li>使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用<h2 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h2></li>
-<li>order by是对结果按照一个列或多个列进行排序，默认为升序</li>
-<li>例：select column1，column2，….<br>from table<br>order by column1，column2，…. asc|desc；<h2 id="row-number"><a href="#row-number" class="headerlink" title="row_number()"></a>row_number()</h2></li>
-<li>row_number()函数是将select查询到的数据进行排序，每一条数据会加一个序号，当排序数据相同时它会顺序排下来，不会出现相同序号，所以一般不作为成绩类的查询，一般用于分页查询</li>
-<li>例:select<br>row_number() over (order by score desc) as [RANK],*<br>from score<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70</li>
-</ul>
-<h2 id="rank"><a href="#rank" class="headerlink" title="rank()"></a>rank()</h2><ul>
-<li>对某一字段进行排名，不同于row_number(),当数据相同时，序号会相同，即排名是相同的，所以一般用于成绩的查询。</li>
-<li>例：SELECT RANK() OVER (ORDER BY SCORE DESC) AS [RANK],*<br>FROM Scores;<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>1     3      85<br>3     4      80<br>4     5      74<br>5     1      70<br>原先结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70<h2 id="dense-rank"><a href="#dense-rank" class="headerlink" title="dense_rank()"></a>dense_rank()</h2></li>
-<li>dense_rank()函数也是排名函数，和rank()功能类似，也是对字段进行排名，但是dense_rank()排名是连续的，rank()是跳跃的,即当rank排名的结果是11345，而dense_rank()的结果是11234。<h2 id="ntile"><a href="#ntile" class="headerlink" title="ntile()"></a>ntile()</h2></li>
-<li>ntile()函数将排序分区中的行划分为特定数量的组。从每个组分配一个从一开始的桶号。对于每一行，ntile()函数返回一个桶号，表示行所属的组。</li>
-</ul>
-
+<li>使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

@@ -145,6 +145,78 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">mysql学习_排序函数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-05-04 11:03:06 / Modified: 14:01:42" itemprop="dateCreated datePublished" datetime="2023-05-04T11:03:06+08:00">2023-05-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>数据表<br>StuID   Score<br>1        70<br>2        85<br>3        85<br>4        80<br>5        74</li>
+<li>使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用<h2 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h2></li>
+<li>order by是对结果按照一个列或多个列进行排序，默认为升序</li>
+<li>例：select column1，column2，….<br>from table<br>order by column1，column2，…. asc|desc；<h2 id="row-number"><a href="#row-number" class="headerlink" title="row_number()"></a>row_number()</h2></li>
+<li>row_number()函数是将select查询到的数据进行排序，每一条数据会加一个序号，当排序数据相同时它会顺序排下来，不会出现相同序号，所以一般不作为成绩类的查询，一般用于分页查询</li>
+<li>例:select<br>row_number() over (order by score desc) as [RANK],*<br>from score<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70</li>
+</ul>
+<h2 id="rank"><a href="#rank" class="headerlink" title="rank()"></a>rank()</h2><ul>
+<li>对某一字段进行排名，不同于row_number(),当数据相同时，序号会相同，即排名是相同的，所以一般用于成绩的查询。</li>
+<li>例：SELECT RANK() OVER (ORDER BY SCORE DESC) AS [RANK],*<br>FROM Scores;<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>1     3      85<br>3     4      80<br>4     5      74<br>5     1      70<br>原先结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70<h2 id="dense-rank"><a href="#dense-rank" class="headerlink" title="dense_rank()"></a>dense_rank()</h2></li>
+<li>dense_rank()函数也是排名函数，和rank()功能类似，也是对字段进行排名，但是dense_rank()排名是连续的，rank()是跳跃的,即当rank排名的结果是11345，而dense_rank()的结果是11234。<h2 id="ntile"><a href="#ntile" class="headerlink" title="ntile()"></a>ntile()</h2></li>
+<li>ntile()函数将排序分区中的行划分为特定数量的组。从每个组分配一个从一开始的桶号。对于每一行，ntile()函数返回一个桶号，表示行所属的组。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/02/%E4%BD%BF%E7%94%A8vis-js%E5%8F%AF%E8%A7%86%E5%8C%96%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E8%BE%B9%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -170,7 +242,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-03-02 00:01:30 / Modified: 17:08:41" itemprop="dateCreated datePublished" datetime="2023-03-02T00:01:30+08:00">2023-03-02</time>
+              <time title="Created: 2023-03-02 00:01:30 / Modified: 17:10:18" itemprop="dateCreated datePublished" datetime="2023-03-02T00:01:30+08:00">2023-03-02</time>
             </span>
 
           
@@ -475,7 +547,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

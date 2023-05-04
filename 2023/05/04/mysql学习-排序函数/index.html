@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="数据表StuID   Score1        702        853        854        805        74 使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用order by order by是对结果按照一个列或多个列进行排序，默认为升序 例：select column1，column2，….from tableorder by c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/06/06/hello-world/index.html">
+<meta property="og:title" content="mysql学习_排序函数">
+<meta property="og:url" content="http://example.com/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="数据表StuID   Score1        702        853        854        805        74 使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用order by order by是对结果按照一个列或多个列进行排序，默认为升序 例：select column1，column2，….from tableorder by c">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-06T11:05:21.915Z">
-<meta property="article:modified_time" content="2022-06-06T11:05:21.915Z">
+<meta property="article:published_time" content="2023-05-04T03:03:06.000Z">
+<meta property="article:modified_time" content="2023-05-04T06:01:42.164Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/06/06/hello-world/">
+<link rel="canonical" href="http://example.com/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Hello World | Hexo</title>
+  <title>mysql学习_排序函数 | Hexo</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/06/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/mysql%E5%AD%A6%E4%B9%A0-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          mysql学习_排序函数
         </h1>
 
         <div class="post-meta">
@@ -172,8 +172,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-06-06 19:05:21" itemprop="dateCreated datePublished" datetime="2022-06-06T19:05:21+08:00">2022-06-06</time>
+              <time title="Created: 2023-05-04 11:03:06 / Modified: 14:01:42" itemprop="dateCreated datePublished" datetime="2023-05-04T11:03:06+08:00">2023-05-04</time>
             </span>
 
           
@@ -187,19 +188,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <ul>
+<li>数据表<br>StuID   Score<br>1        70<br>2        85<br>3        85<br>4        80<br>5        74</li>
+<li>使用mysql进行排序通常会使用order by，但也有4个排序函数也十分好用<h2 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h2></li>
+<li>order by是对结果按照一个列或多个列进行排序，默认为升序</li>
+<li>例：select column1，column2，….<br>from table<br>order by column1，column2，…. asc|desc；<h2 id="row-number"><a href="#row-number" class="headerlink" title="row_number()"></a>row_number()</h2></li>
+<li>row_number()函数是将select查询到的数据进行排序，每一条数据会加一个序号，当排序数据相同时它会顺序排下来，不会出现相同序号，所以一般不作为成绩类的查询，一般用于分页查询</li>
+<li>例:select<br>row_number() over (order by score desc) as [RANK],*<br>from score<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70</li>
+</ul>
+<h2 id="rank"><a href="#rank" class="headerlink" title="rank()"></a>rank()</h2><ul>
+<li>对某一字段进行排名，不同于row_number(),当数据相同时，序号会相同，即排名是相同的，所以一般用于成绩的查询。</li>
+<li>例：SELECT RANK() OVER (ORDER BY SCORE DESC) AS [RANK],*<br>FROM Scores;<br>查询结果：<br>RANK StuID Score<br>1     2      85<br>1     3      85<br>3     4      80<br>4     5      74<br>5     1      70<br>原先结果：<br>RANK StuID Score<br>1     2      85<br>2     3      85<br>3     4      80<br>4     5      74<br>5     1      70<h2 id="dense-rank"><a href="#dense-rank" class="headerlink" title="dense_rank()"></a>dense_rank()</h2></li>
+<li>dense_rank()函数也是排名函数，和rank()功能类似，也是对字段进行排名，但是dense_rank()排名是连续的，rank()是跳跃的,即当rank排名的结果是11345，而dense_rank()的结果是11234。<h2 id="ntile"><a href="#ntile" class="headerlink" title="ntile()"></a>ntile()</h2></li>
+<li>ntile()函数将排序分区中的行划分为特定数量的组。从每个组分配一个从一开始的桶号。对于每一行，ntile()函数返回一个桶号，表示行所属的组。</li>
+</ul>
 
     </div>
 
@@ -214,11 +216,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2023/02/24/%E4%BD%BF%E7%94%A8Flask%E9%81%87%E5%88%B0%E7%9A%84CSS%E3%80%81JS%E5%BC%95%E7%94%A8%E9%97%AE%E9%A2%98/" rel="next" title="使用Flask遇到的CSS、JS引用问题">
-      使用Flask遇到的CSS、JS引用问题 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/03/02/%E4%BD%BF%E7%94%A8vis-js%E5%8F%AF%E8%A7%86%E5%8C%96%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E8%BE%B9%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/" rel="prev" title="使用vis.js可视化中遇到的边不显示问题">
+      <i class="fa fa-chevron-left"></i> 使用vis.js可视化中遇到的边不显示问题
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -277,7 +279,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#order-by"><span class="nav-number">1.</span> <span class="nav-text">order by</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#row-number"><span class="nav-number">2.</span> <span class="nav-text">row_number()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rank"><span class="nav-number">3.</span> <span class="nav-text">rank()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dense-rank"><span class="nav-number">4.</span> <span class="nav-text">dense_rank()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ntile"><span class="nav-number">5.</span> <span class="nav-text">ntile()</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
